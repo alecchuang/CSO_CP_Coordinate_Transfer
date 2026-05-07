@@ -45,14 +45,14 @@ st.divider()
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("### X 座標輸入")
+    st.markdown("### X Coordinate Input")
     probe_x_input = st.text_input("CP Prober X:")
     fuse_x_input = st.text_input("CP Fuse X:")
     aoi_x_input = st.text_input("ATT AOI X:")
     atk_x_input = st.text_input("ATK X:", help="支援的字元: 0-9, A, C-H, J-N, P-S")
 
 with col2:
-    st.markdown("### Y 座標輸入")
+    st.markdown("### Y Coordinate Input")
     probe_y_input = st.text_input("CP Prober Y:")
     fuse_y_input = st.text_input("CP Fuse Y:")
     aoi_y_input = st.text_input("ATT AOI Y:")
@@ -61,7 +61,7 @@ with col2:
 st.markdown("") # 產生一點空隙
 
 # --- 建立 Start 按鈕 ---
-if st.button("Start 轉換", type="primary", use_container_width=True):
+if st.button("Start Transfer", type="primary", use_container_width=True):
     
     # 讀取輸入框的內容並解析
     probe_x = get_numeric_value(probe_x_input)
