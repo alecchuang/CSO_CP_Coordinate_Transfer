@@ -165,6 +165,6 @@ if st.button("Start Transfer", type="primary", use_container_width=True):
     log_messages.append("----------------")
 
     # --- 顯示輸出結果 ---
-    st.subheader("輸出訊息:")
+    st.subheader("Output Message:")
     # 將 List 轉換為換行字串，顯示在程式碼區塊內
     st.code("\n".join(log_messages), language="plaintext")
